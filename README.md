@@ -8,9 +8,7 @@ This project includes a precompiled `MyPong.swf` file that can be played directl
 
 You can play this game directly in your browser via GitHub Pages:
 
-👉 [**Play MyPong**](https://<your-github-username>.github.io/MyPong/)
-
-> Replace `<your-github-username>` with your actual GitHub username.
+👉 [**Play MyPong**](https://casparjones.github.io/MyPong/)
 
 ## 🔧 How to Run the Game with Ruffle
 

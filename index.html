@@ -8,8 +8,23 @@
 <body>
     <h1>MyPong</h1>
     <p>A simple Pong game made with AS3</p>
-    <div id="game">
-        <embed src="MyPong.swf" width="550" height="400">
-    </div>
+    <div id="game"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("game");
+            container.appendChild(player);
+            player.ruffle().load("movie.swf");
+        });
+    </script>
+    <style>
+        #game {
+            width: 100vw;
+            background: gainsboro;
+            height: 100vh;
+        }
+    </style>
 </body>
 </html>
