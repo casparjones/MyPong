@@ -16,14 +16,19 @@
             const player = ruffle.createPlayer();
             const container = document.getElementById("game");
             container.appendChild(player);
-            player.ruffle().load("movie.swf");
+            player.ruffle().load("MyPong.swf");
         });
     </script>
     <style>
         #game {
             width: 100vw;
-            background: gainsboro;
             height: 100vh;
+            display: flex;
+            border: 0;
+            top: 0;
+            position: absolute;
+            padding: 110px;
+            text-align: center;
         }
     </style>
 </body>
