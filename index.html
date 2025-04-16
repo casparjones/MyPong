@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>MyPong</h1>
-    <p>A simple Pong game made with AS3</p>
+    <p>A simple Pong game made with AS3 and played in <a href="https://github.com/ruffle-rs/ruffle"></a>the ruffle player. Navigate your Paddle with the mouse.</a></p>
     <div id="game"></div>
     <script>
         window.RufflePlayer = window.RufflePlayer || {};
@@ -27,8 +27,15 @@
             border: 0;
             top: 0;
             position: absolute;
-            padding: 110px;
+            padding-top: 110px;
             text-align: center;
+        }
+        ruffle-player {
+            width: 70vw;
+            height: 44vw;
+            margin: auto;
+            margin-top: -2px;
+            border: 1px solid black;
         }
     </style>
 </body>
